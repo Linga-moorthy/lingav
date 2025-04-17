@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linga Moorthy's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Linga Moorthy V</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Linga Moorthy V</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./image.png" alt="Linga Moorthy profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Linga Moorthy V</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+            <a 
+            href="https://drive.google.com/file/d/1eZ7S9V1Tj7lDTW7UOm8lMfrg3WciNr91/view" 
+            class="btn btn-color-2" 
+            target="_blank"
+          >
+            Download CV
+          </a>
+          
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/linga-moorthy-211797300/'"
+          />
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./li.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BCA, CGPA: 8.04<br />MCA, CGPA: 8.03</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Energetic and detail-oriented fresher passionate about technology and innovation. Looking to begin a career in a reputable company where I can utilize my problem-solving and coding skills to deliver real-world solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">My Skillset</p>
+      <h1 class="title">Skills</h1>
+      <div class="section-container">
+        <div class="section__text">
+          <h3>Languages:</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="section__text">
+          <h3>Frameworks/Technologies:</h3>
+          <ul>
+            <li>ReactJS</li>
+            <li>Tailwind CSS</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="section__text">
+          <h3>Development Tools:</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>WordPress</li>
+            <li>Android Studio</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">My Work</p>
+      <h1 class="title">Projects</h1>
+      <div class="section-container">
+        <div class="section__text">
+          <h2>Deep Learning Framework for Cervical Cancer Prediction</h2>
+          <p>Technologies: Python, VGG16, Autoencoder</p>
+          <p>Developed a deep learning framework integrating VGG16 transfer learning, autoencoder-based feature compression, and ML classifiers (SVM, KNN, Random Forest).</p>
+          <p>Evaluated performance using confusion matrices and classification reports for accuracy, precision, and recall. Delivered an efficient tool for cervical cancer diagnosis to support early detection and better patient care.</p>
+        </div>
+        <div class="section__text">
+          <h2>Hybrid Cryptosystem using Digital Envelope and Authentication</h2>
+          <p>Technologies: Cryptography, Java</p>
+          <p>Built a hybrid cryptosystem combining symmetric encryption and digital signature for secure messaging.</p>
+          <p>Ensured data integrity and authenticity through encryption and signing techniques. Achieved confidentiality and non-repudiation in message exchange.</p>
+        </div>
+        <div class="section__text">
+          <h2>Human Detection, Tracking, and Alert System Using Computer Vision</h2>
+          <p>Technologies: Python, MobileNetSSD</p>
+          <p>Developed a real-time system to detect, track, and count individuals using MobileNetSSD and OpenCV.</p>
+          <p>Implemented alert and timer functionalities to notify when occupancy or time thresholds were exceeded. Built a responsive interface and log system for real-time monitoring, data storage, and user configuration.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:linga5404@gmail.com">linga5404@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/linga-moorthy-211797300/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169;Linga Moorthy. All Rights Reserved.</p>
+      </footer>
+  </body>
+</html>
